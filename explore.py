@@ -35,8 +35,9 @@ print(df['region'].value_counts())
 print()
 
 # exercise 7: select columns
-print(df[['region', 'product', 'revenue']])
-print()
+df2 = df[['region', 'product', 'revenue']]
+print(df2)
+print(df2.shape)
 
 # exercise 8: save
 # df.to_csv('data/explored.csv', index=False)
